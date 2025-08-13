@@ -1,6 +1,6 @@
 [build]
   publish = "."
+  functions = "netlify/functions"
 
-[[edge_functions]]
-  function = "api"
-  path = "/api/*"
+[build.environment]
+  NODE_VERSION = "18"

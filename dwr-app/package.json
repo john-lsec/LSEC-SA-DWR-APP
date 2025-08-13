@@ -1,7 +1,7 @@
 {
   "name": "dwr-app",
   "version": "1.0.0",
-  "scripts": {
-    "build": "echo 'Building site'"
+  "dependencies": {
+    "@netlify/neon": "^0.3.0"
   }
 }
