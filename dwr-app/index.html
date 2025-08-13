@@ -698,8 +698,7 @@
     </div>
 
     <script>
-        // Configuration - NO CREDENTIALS NEEDED!
-        // Netlify Functions will automatically use your Neon database
+        // Configuration - Update for GitHub deployment
         const API_BASE = '/.netlify/functions/';
         const GOOGLE_MAPS_API_KEY = 'AIzaSyBQq_tXLv0APu8LFfjLogSh4cIqo49yJVg'; // Optional
 
@@ -719,7 +718,7 @@
         // API Helper function
         async function apiCall(endpoint, options = {}) {
             try {
-                const response = await fetch(API_BASE + endpoint, {
+                const response = await fetch(API_BASE + 'api/' + endpoint, {
                     headers: {
                         'Content-Type': 'application/json',
                         ...options.headers
